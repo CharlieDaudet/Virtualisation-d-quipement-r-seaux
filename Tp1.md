@@ -64,9 +64,6 @@ ARP
 ```
 📁 [p1_ping.pcap fdghjkl](p1_ping.pcapng)
 
-```bash
-
-```
 ## Part 2 : Bring that switch in
 ### 3. Même chose en fast
 
@@ -148,4 +145,8 @@ VPCS> show arp
 
 📁 [p2_arp_node2.pcap ejf](./p2_arp_node2.pcapng)
 
-📁 [p2_arp_node3.pcap]
+📁 [p2_arp_node3.pcap djqgf](./p2_arp_node3.pcapng)
+
+## Part 3 : DHCP is a nice guy
+### 3. Setuuuup
+🌞 Installer un serveur DHCP
