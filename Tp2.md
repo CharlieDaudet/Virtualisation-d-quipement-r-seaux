@@ -70,3 +70,38 @@ VPCS> ping 1.1.1.1
 📁 [p1_nat.pcap](p1_nat.pcapng)
 
 📁 [r1_running_config.txt](r1_running_config.txt)
+
+### 3. Vrai accès internet clients
+
+🌞 Prove it
+```bash
+VPCS> ip dns 1.1.1.1
+```
+```bash
+VPCS> ping efrei.fr
+efrei.fr resolved to 51.210.229.203
+84 bytes from 51.210.229.203 icmp_seq=1 ttl=253 time=50.898 ms
+84 bytes from 51.210.229.203 icmp_seq=2 ttl=253 time=46.811 ms
+84 bytes from 51.210.229.203 icmp_seq=3 ttl=253 time=41.614 ms
+```
+
+### 4. DHCP again
+
+🌞 Test test test 
+```bash
+PC1> ip dhcp
+DDORA IP 10.2.1.164/24 GW 10.2.1.254
+
+PC1> show
+
+NAME   IP/MASK              GATEWAY           MAC                LPORT  RHOST:PORT
+PC1    10.2.1.164/24        10.2.1.254        00:50:79:66:68:04  10017  127.0.0.1:10018
+       fe80::250:79ff:fe66:6804/64
+
+PC1> ping efrei.fr
+efrei.fr resolved to 51.210.229.203
+84 bytes from 51.210.229.203 icmp_seq=1 ttl=253 time=33.066 ms
+84 bytes from 51.210.229.203 icmp_seq=2 ttl=253 time=42.540 ms
+```
+
+### 3. ARP spoofing
