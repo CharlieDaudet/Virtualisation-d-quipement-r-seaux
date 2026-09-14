@@ -1,4 +1,4 @@
-# TP1 : On r'voit les basics 
+# TP1 : On revoit les basics 
 
 ## Part 1 : Most simplest LAN
 ### 3. Know your MAC
