@@ -59,7 +59,7 @@ VPCS> ping 1.1.1.1
 📁 [p1_no_nat.pcap](p1_no_nat.pcapng)
 
 ### 2. Accès internet clients
-🌞 Proooooooooof or lie
+🌞 Proof or lie
 
 ```bash 
 VPCS> ping 1.1.1.1
